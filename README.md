@@ -8,6 +8,10 @@
         <img src="https://img.shields.io/badge/Python-3.8-ff69b4.svg" /></a>
        <a href= "https://pytorch.org/">
         <img src="https://img.shields.io/badge/PyTorch-1.10-2BAF2B.svg" /></a>
+       <a href= "https://fluxml.ai/">
+        <img src="https://img.shields.io/badge/Flux-v0.12.8-red" /></a>
+       <a href= "https://github.com/google/jax">
+        <img src="https://img.shields.io/badge/Jax-v0.1.75-yellow" /></a>
        <a href= "https://github.com/BeeGass/VAEs/blob/master/LICENSE">
         <img src="https://img.shields.io/badge/license-Apache2.0-blue.svg" /></a>
          <a href= "http://twitter.com/intent/tweet?text=Readable-VAEs:%20A%20Collection%20Of%20VAEs%20Written%20In%20PyTorch%20And%20Jax%3A&url=https://github.com/BeeGass/Readable-VAEs">
