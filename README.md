@@ -26,6 +26,15 @@ A collection of Variational AutoEncoders (VAEs) I have implemented in both [jax]
 - Jax 
 - TODO
 
+### Installation
+```
+$ TBA
+```
+
+### Usage
+```
+$ TBA
+```
 
 ## Julia
 ### Requirements For Flux
@@ -41,6 +50,8 @@ $ TBA
 ```
 $ TBA
 ```
+--- 
+
 **Config File Template**
 ```yaml
 TBA
