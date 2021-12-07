@@ -17,10 +17,19 @@
 
 A collection of Variational AutoEncoders (VAEs) I have implemented in both [jax](https://github.com/google/jax)/[flax](https://github.com/google/flax) and [pytorch](https://pytorch.org/) with particular effort put into readability and reproducibility. 
 
-### Requirements
+## Python 
+### Requirements For Jax
 - Python >= 3.8
 - PyTorch >= 1.10
+
+### Requirements For PyTorch
 - Jax 
+- TODO
+
+
+## Julia
+### Requirements For Flux
+- TODO
 - TODO
 
 ### Installation
