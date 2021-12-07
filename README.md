@@ -1,5 +1,5 @@
 <h1 align="center">
-  <b>VAEs</b><br> 
+  <b>VAEs</b>
   <b>Jax | Flux | PyTorch</b><br> 
 </h1>
 
