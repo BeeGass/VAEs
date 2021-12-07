@@ -1,7 +1,5 @@
 <h1 align="center">
   <b>VAEs</b><br> 
-</h1>
-<h1 align="center">
   <b>Jax | Flux | PyTorch</b><br> 
 </h1>
 
