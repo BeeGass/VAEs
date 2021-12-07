@@ -5,10 +5,10 @@ from vae_encoder import Encoder
 from vae_decoder import Decoder
 
 class VAE(nn.Module):
-    def __init__(self, latent_vector_dim, sub_dim, train_bool=True):
+    def __init__(self, latent_vector_dim, sub_dim, train_bool=True, encoder_type='vanilla', decoder_type='vanilla'):
         super(VAE, self).__init__()
-        self._encoder = Encoder(latent_vector_dim, sub_dim)
-        self._decoder = Decoder(latent_vector_dim, sub_dim)
+        self._encoder = Encoder(latent_vector_dim, sub_dim, encoder_type)
+        self._decoder = Decoder(latent_vector_dim, sub_dim, decoder_type)
         self.train_bool = train_bool
 
     def forward(self, x):

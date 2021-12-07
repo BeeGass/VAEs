@@ -28,11 +28,14 @@ def config_run(cfg : DictConfig) -> None:
                                                  patience=5, 
                                                  verbose=True)
     
-    model = VAE(latent_vector_dim=cfg["models"]["hidden_dim"], sub_dim=cfg["models"]["hidden_sub_dim"]).to(device) # initialize model
+    model = VAE(latent_vector_dim=cfg["models"]["hidden_dim"], 
+                sub_dim=cfg["models"]["hidden_sub_dim"],
+                encoder_type=cfg["models"]["encoder"],
+                decoder_type=cfg["models"]["decoder"]).to(device) # initialize model
     
-    run(model, optimizer, sched, train_loader, test_loader, cfg["train"]["num_epochs"], device)
+    run(model, optimizer, sched, train_loader, test_loader, device, cfg["train"]["num_epochs"])
 
-def run(model, optim, sched, train_loader, test_loader, num_epochs=100, device):
+def run(model, optim, sched, train_loader, test_loader, device, num_epochs=100):
     for epoch in range(num_epochs):
         train_loss = train(model, optim, sched, train_loader, device, watch_loss=False)
         test_loss = test(model, test_loader, device, watch_loss=False)
