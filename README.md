@@ -24,11 +24,10 @@ A collection of Variational AutoEncoders (VAEs) I have implemented in [jax](http
 ## Python 
 ### Requirements For Jax
 - Python >= 3.8
-- PyTorch >= 1.10
+- jax
 
 ### Requirements For PyTorch
-- Jax 
-- TODO
+- PyTorch >= 1.10
 
 ### Installation
 ```
