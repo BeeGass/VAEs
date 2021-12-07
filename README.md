@@ -56,12 +56,13 @@ TBA
 
 ### Citation
 ```
-@misc{Gass2021,
-  author = {Gass, B.A.},
-  title = {Readable-VAEs},
-  year = {2021},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/BeeGass/Readable-VAEs}}
+@software{Gass_Readable-VAEs_2021,
+  author = {Gass, B.A., Gass, B.A.},
+  doi = {10.5281/zenodo.1234},
+  month = {12},
+  title = {{Readable-VAEs}},
+  url = {https://github.com/BeeGass/Readable-VAEs},
+  version = {1.0.0},
+  year = {2021}
 }
 ```
