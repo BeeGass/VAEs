@@ -49,10 +49,10 @@ TBA
 
 | Model           | Code  | Config  | Paper                                             | Reconstruction | Samples | 
 |-----------------|-------|---------|---------------------------------------------------|----------------|---------|
-| VAE             | <ul><li>- [ ]</li></ul> | <ul><li>- [ ]</li></ul>   | [Link](https://arxiv.org/abs/1312.6114)           |     **TBA**    | **TBA** |
-| Beta-VAE        | <ul><li>- [ ]</li></ul> | <ul><li>- [ ]</li></ul>   | [Link](https://openreview.net/forum?id=Sy2fzU9gl) |     **TBA**    | **TBA** |
-| Conditional VAE | <ul><li>- [ ]</li></ul> | <ul><li>- [ ]</li></ul>   | [Link](https://openreview.net/forum?id=rJWXGDWd-H)|     **TBA**    | **TBA** |
-| VQ-VAE-2        | <ul><li>- [ ]</li></ul> | <ul><li>- [ ]</li></ul>   | [Link](https://arxiv.org/abs/1906.00446)          |     **TBA**    | **TBA** |
+| VAE             |&#9744;| &#9744; | [Link](https://arxiv.org/abs/1312.6114)           |     **TBA**    | **TBA** |
+| Beta-VAE        |&#9744;| &#9744; | [Link](https://openreview.net/forum?id=Sy2fzU9gl) |     **TBA**    | **TBA** |
+| Conditional VAE |&#9744;| &#9744; | [Link](https://openreview.net/forum?id=rJWXGDWd-H)|     **TBA**    | **TBA** |
+| VQ-VAE-2        |&#9744;| &#9744; | [Link](https://arxiv.org/abs/1906.00446)          |     **TBA**    | **TBA** |
 
 ### Citation
 ```
