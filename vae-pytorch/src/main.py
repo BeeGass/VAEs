@@ -12,7 +12,7 @@ from test import test
 from data_process import prepare_datasets, load_datasets
 
   
-@hydra.main(config_path="conf", config_name="config")
+@hydra.main(config_path="./vae-pytorch/src/conf", config_name="config")
 def config_run(cfg : DictConfig) -> None:
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu") # check if GPU is available
     
@@ -29,7 +29,7 @@ def config_run(cfg : DictConfig) -> None:
                                                  verbose=True)
     
     model = VAE(latent_vector_dim=cfg["models"]["hidden_dim"], 
-                sub_dim=cfg["models"]["hidden_sub_dim"],
+                sub_dim=cfg["models"]["hidden_sub_dim"], 
                 encoder_type=cfg["models"]["encoder"],
                 decoder_type=cfg["models"]["decoder"]).to(device) # initialize model
     
