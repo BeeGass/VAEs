@@ -55,7 +55,7 @@ TBA
 | VQ-VAE-2        |&#9744;| &#9744; | [Link](https://arxiv.org/abs/1906.00446)          |     **TBA**    | **TBA** |
 
 ### Citation
-```
+```bib
 @software{Gass_Readable-VAEs_2021,
   author = {Gass, B.A., Gass, B.A.},
   doi = {10.5281/zenodo.1234},
