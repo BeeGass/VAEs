@@ -1,7 +1,67 @@
-# `code`
+<h1 align="center">
+  <b>Jax | VAE | PyTorch</b><br>
+</h1>
 
-It's important to keep the code that is executed separated from that which is called. The distinct difference here is that executed code should change from day-to-day or analysis to analysis. You're not necessarily making all measurements at the same time, or at the exact same concentration, or even on the same materials. As your experiments change, your code should also change to make sure you a transforming or interpreting the data correctly. 
+<p align="center">
+      <a href="https://www.python.org/">
+        <img src="https://img.shields.io/badge/Python-3.8-ff69b4.svg" /></a>
+       <a href= "https://pytorch.org/">
+        <img src="https://img.shields.io/badge/PyTorch-1.10-2BAF2B.svg" /></a>
+       <a href= "https://github.com/BeeGass/VAEs/blob/master/LICENSE">
+        <img src="https://img.shields.io/badge/license-Apache2.0-blue.svg" /></a>
+         <a href= "http://twitter.com/intent/tweet?text=Readable-VAEs:%20A%20Collection%20Of%20VAEs%20Written%20In%20PyTorch%20And%20Jax%3A&url=https://github.com/BeeGass/Readable-VAEs">
+        <img src="https://img.shields.io/twitter/url/https/shields.io.svg?style=social" /></a>
 
-However, any code that is critical for an analysis, such as a function that computes some quantity from your data, should be written such that it is *modular* and is used the same way from day-to-day. This type of code should be referenced by your analysis or processing scripts such that if you change the way you perform something, it can be applied to all of your experiments simply by rerunning the processing scripts. You *don't* want to go back through each experiment and make that change by hand.
+</p>
 
-This directory is broken into several subdirectories, each of which has a `README.md` file describing what should be there with some examples. 
+A collection of Variational AutoEncoders (VAEs) I have implemented in both [jax](https://github.com/google/jax)/[flax](https://github.com/google/flax) and [pytorch](https://pytorch.org/) with particular effort put into readability and reproducibility. 
+
+### Requirements
+- Python >= 3.8
+- PyTorch >= 1.10
+- Jax 
+- TODO
+
+### Installation
+```
+$ TBA
+```
+
+### Usage
+```
+$ TBA
+```
+**Config File Template**
+```yaml
+TBA
+```
+
+**Weights And Biases Integration**
+```
+TBA
+```
+
+----
+<h2 align="center">
+  <b>Results</b><br>
+</h2>
+
+
+| Model           | Code  | Config  | Paper                                             | Reconstruction | Samples | 
+|-----------------|-------|---------|---------------------------------------------------|----------------|---------|
+| VAE             |&#9744;| &#9744; | [Link](https://arxiv.org/abs/1312.6114)           |     **TBA**    | **TBA** |
+| Beta-VAE        |&#9744;| &#9744; | [Link](https://openreview.net/forum?id=Sy2fzU9gl) |     **TBA**    | **TBA** |
+| Conditional VAE |&#9744;| &#9744; | [Link](https://openreview.net/forum?id=rJWXGDWd-H)|     **TBA**    | **TBA** |
+| VQ-VAE-2        |&#9744;| &#9744; | [Link](https://arxiv.org/abs/1906.00446)          |     **TBA**    | **TBA** |
+
+### Citation
+```
+@misc{Gass2021,
+  author = {Gass, B.A.},
+  title = {Readable-VAEs},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/BeeGass/Readable-VAEs}}
+}
+```
