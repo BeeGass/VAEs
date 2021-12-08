@@ -1,0 +1,28 @@
+sweep:
+  method: bayes
+  metric:
+    name: elbo_loss
+    goal: minimize
+  parameters:
+    epochs:
+      value: 10
+    batch_size: 
+      value: [1, 64, 128, 256, 512]
+    weight_decay:
+      value: [1e-4, 1e-5, 1e-6, 1e-7]
+    learning_rate: 
+      value: [0.001, 0.01, 0.003]
+    beta:
+      value: 1
+    hidden_dim:
+      value: [96, 128, 148]
+    hidden_sub_dim: 
+      value: [1, 10, 20, 30, 40, 50]
+  early_terminate:
+    type: hyperband
+    s: 2
+    eta: 3
+    max_iter: 27
+
+    
+  

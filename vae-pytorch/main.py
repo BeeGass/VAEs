@@ -15,6 +15,9 @@ import sys
 def config_run(cfg : DictConfig) -> None:
     wandb.login()
     with wandb.init(project="BeeGass-VAE", entity="beegass", config=cfg): # initialize wandb project for logging
+        if cfg["wandb"]["tune"]:
+            sweep_id = wandb.sweep(sweep_config, project="BeeGass-VAE", entity="beegass")
+            wandb.agent(sweep_id, function=)
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu") # check if GPU is available
         model = VAE(latent_vector_dim=cfg["models"]["hidden_dim"], 
                     sub_dim=cfg["models"]["hidden_sub_dim"], 
@@ -22,18 +25,18 @@ def config_run(cfg : DictConfig) -> None:
                     decoder_type=cfg["models"]["decoder"]).to(device) # initialize model
         trainset, testset = prepare_datasets()
         train_loader, test_loader = load_datasets(trainset, 
-                                                testset, 
-                                                cfg["train"]["batch_size"], 
-                                                cfg["train"]["num_workers"])
+                                                  testset, 
+                                                  cfg["train"]["batch_size"], 
+                                                  cfg["train"]["num_workers"])
         
         optimizer = optim.Adam(model.parameters(), 
-                            lr=cfg["train"]["learning_rate"], 
-                            weight_decay=cfg["train"]["weight_decay"])
+                               lr=cfg["train"]["learning_rate"], 
+                               weight_decay=cfg["train"]["weight_decay"])
         
         sched = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 
-                                                    mode='min', 
-                                                    patience=5, 
-                                                    verbose=True)
+                                                     mode='min', 
+                                                     patience=5, 
+                                                     verbose=True)
         
         train(model=model, 
             optimizer=optimizer, 
@@ -46,8 +49,8 @@ def config_run(cfg : DictConfig) -> None:
             log_metrics=cfg["wandb"]["log_metrics"], 
             watch_loss=cfg["wandb"]["watch_loss"])
         
-        torch.onnx.export(model, images, "model.onnx")
-        wandb.save("model.onnx")
+        #torch.onnx.export(model, images, "model.onnx")
+        #wandb.save("model.onnx")
 
 def train(model, optimizer, sched, train_loader, test_loader, device, num_epochs=100, test_bool=True, log_metrics=False, watch_loss=False):
     print("beginning run")
@@ -60,9 +63,8 @@ def train(model, optimizer, sched, train_loader, test_loader, device, num_epochs
     for epoch in range(num_epochs):
         train_loss = train_batch(model, optimizer, train_loader, device, log_metrics)
         if log_metrics:
-            wandb.log({"train_loss": train_loss})
-            wandb.log({"epoch": epoch})
-        print(f"Epoch: {epoch+1} \nTrain Loss: {train_loss}")
+            wandb.log({"train_loss over epoch": epoch, train_loss})
+        #print(f"Epoch: {epoch+1} \nTrain Loss: {train_loss}")
         sched.step(train_loss)
         
     if test_bool:

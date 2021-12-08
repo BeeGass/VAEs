@@ -17,3 +17,4 @@ train:
 wandb:
   log_metrics: True
   watch_loss: True
+  tune: False
