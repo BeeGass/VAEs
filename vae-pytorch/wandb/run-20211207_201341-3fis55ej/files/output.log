@@ -1,0 +1,161 @@
+
+beginning experiment
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+9913344it [00:00, 17908006.01it/s]
+29696it [00:00, 63033426.91it/s]
+1649664it [00:00, 10891700.43it/s]
+5120it [00:00, 20768700.66it/s]
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting ./vae-pytorch/src/data/MNIST/raw/train-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting ./vae-pytorch/src/data/MNIST/raw/train-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/t10k-images-idx3-ubyte.gz
+Extracting ./vae-pytorch/src/data/MNIST/raw/t10k-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting ./vae-pytorch/src/data/MNIST/raw/t10k-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+beginning run
+Epoch: 1
+Train Loss: 0.07440805435180664
+Test Loss: 0.07328581809997559
+Epoch: 2
+Train Loss: 0.07471095770597458
+Test Loss: 0.07369762659072876
+Epoch: 3
+Train Loss: 0.07475057244300842
+Test Loss: 0.07376226782798767
+Epoch: 4
+Train Loss: 0.07451211661100388
+Test Loss: 0.07357419282197952
+Epoch: 5
+Train Loss: 0.07467653602361679
+Test Loss: 0.07364316284656525
+Epoch: 6
+Train Loss: 0.07507084310054779
+Test Loss: 0.0737517923116684
+Epoch: 7
+Train Loss: 0.07497614622116089
+Test Loss: 0.07367872446775436
+Epoch     7: reducing learning rate of group 0 to 1.0000e-03.
+Epoch: 8
+Train Loss: 0.0709453672170639
+Test Loss: 0.07388105988502502
+Epoch: 9
+Train Loss: 0.07088200002908707
+Test Loss: 0.07397818565368652
+Epoch: 10
+Train Loss: 0.07088157534599304
+Test Loss: 0.07398702949285507
+Epoch: 11
+Train Loss: 0.07088197767734528
+Test Loss: 0.07397386431694031
+Epoch: 12
+Train Loss: 0.070882648229599
+Test Loss: 0.07397817820310593
+Epoch: 13
+Train Loss: 0.07088189572095871
+Test Loss: 0.07398443669080734
+Epoch: 14
+Train Loss: 0.07088951766490936
+Test Loss: 0.07397577911615372
+Epoch: 15
+Train Loss: 0.07090231031179428
+Test Loss: 0.07394349575042725
+Epoch    15: reducing learning rate of group 0 to 1.0000e-04.
+Epoch: 16
+Train Loss: 0.07045583426952362
+Test Loss: 0.07391826063394547
+Epoch: 17
+Train Loss: 0.07045187056064606
+Test Loss: 0.07391716539859772
+Epoch: 18
+Train Loss: 0.07044365257024765
+Test Loss: 0.07391724735498428
+Epoch: 19
+Train Loss: 0.07044713944196701
+Test Loss: 0.07391662895679474
+Epoch: 20
+Train Loss: 0.07044906914234161
+Test Loss: 0.07391558587551117
+Epoch: 21
+Train Loss: 0.07044650614261627
+Test Loss: 0.07391607016324997
+Epoch: 22
+Train Loss: 0.07044778764247894
+Test Loss: 0.07391677051782608
+Epoch: 23
+Train Loss: 0.07044840604066849
+Test Loss: 0.07391766458749771
+Epoch: 24
+Train Loss: 0.0704486295580864
+Test Loss: 0.07391567528247833
+Epoch    24: reducing learning rate of group 0 to 1.0000e-05.
+Epoch: 25
+Train Loss: 0.07048340141773224
+Test Loss: 0.0738232210278511
+Epoch: 26
+Train Loss: 0.07047221809625626
+Test Loss: 0.07382062822580338
+Epoch: 27
+Train Loss: 0.07046322524547577
+Test Loss: 0.07381879538297653
+Epoch: 28
+Train Loss: 0.07045572996139526
+Test Loss: 0.07381772249937057
+Epoch: 29
+Train Loss: 0.07044921070337296
+Test Loss: 0.07381933182477951
+Epoch: 30
+Train Loss: 0.07044269144535065
+Test Loss: 0.0738188773393631
+Epoch    30: reducing learning rate of group 0 to 1.0000e-06.
+Epoch: 31
+Train Loss: 0.07044316083192825
+Test Loss: 0.07381000369787216
+Epoch: 32
+Train Loss: 0.07044263184070587
+Test Loss: 0.07380127161741257
+Epoch: 33
+Train Loss: 0.07044532150030136
+Test Loss: 0.07379867136478424
+Epoch: 34
+Train Loss: 0.07044760137796402
+Test Loss: 0.07379256188869476
+Epoch: 35
+Train Loss: 0.07044585794210434
+Test Loss: 0.07379112392663956
+Epoch: 36
+Train Loss: 0.07044889777898788
+Test Loss: 0.0737885907292366
+Epoch    36: reducing learning rate of group 0 to 1.0000e-07.
+Epoch: 37
+Train Loss: 0.07044830918312073
+Test Loss: 0.07378964871168137
+Traceback (most recent call last):
+  File "main.py", line 66, in <module>
+    config_run()
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/main.py", line 48, in decorated_main
+    _run_hydra(
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/_internal/utils.py", line 377, in _run_hydra
+    run_and_report(
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/_internal/utils.py", line 211, in run_and_report
+    return func()
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/_internal/utils.py", line 378, in <lambda>
+    lambda: hydra.run(
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/_internal/hydra.py", line 98, in run
+    ret = run_job(
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/core/utils.py", line 160, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "main.py", line 36, in config_run
+    run(model=model,
+  File "main.py", line 51, in run
+    train_loss, mod, dev = train(mod, optimizer, train_loader, dev, log_metrics, watch_loss)
+  File "/home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/src/train_test/train.py", line 29, in train
+    loss.backward()
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/torch/_tensor.py", line 307, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/torch/autograd/__init__.py", line 154, in backward
+    Variable._execution_engine.run_backward(
+KeyboardInterrupt

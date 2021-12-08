@@ -1,0 +1,146 @@
+2021-12-07 22:52:25,898 INFO    MainThread:608522 [internal.py:wandb_internal():87] W&B internal server running at pid: 608522, started at: 2021-12-07 22:52:25.897875
+2021-12-07 22:52:25,900 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: check_version
+2021-12-07 22:52:25,900 INFO    WriterThread:608522 [datastore.py:open_for_write():77] open: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/run-31ipmy8j.wandb
+2021-12-07 22:52:25,902 DEBUG   SenderThread:608522 [sender.py:send():238] send: header
+2021-12-07 22:52:25,902 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: check_version
+2021-12-07 22:52:26,278 DEBUG   SenderThread:608522 [sender.py:send():238] send: run
+2021-12-07 22:52:26,686 INFO    SenderThread:608522 [dir_watcher.py:__init__():169] watching files in: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files
+2021-12-07 22:52:26,686 INFO    SenderThread:608522 [sender.py:_start_run_threads():825] run started: 31ipmy8j with start time 1638935545
+2021-12-07 22:52:26,687 DEBUG   SenderThread:608522 [sender.py:send():238] send: summary
+2021-12-07 22:52:26,687 INFO    SenderThread:608522 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-07 22:52:26,688 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: run_start
+2021-12-07 22:52:26,691 DEBUG   HandlerThread:608522 [meta.py:__init__():40] meta init
+2021-12-07 22:52:26,691 DEBUG   HandlerThread:608522 [meta.py:__init__():54] meta init done
+2021-12-07 22:52:26,691 DEBUG   HandlerThread:608522 [meta.py:probe():214] probe
+2021-12-07 22:52:26,697 DEBUG   HandlerThread:608522 [meta.py:_setup_git():204] setup git
+2021-12-07 22:52:26,712 DEBUG   HandlerThread:608522 [meta.py:_setup_git():211] setup git done
+2021-12-07 22:52:26,712 DEBUG   HandlerThread:608522 [meta.py:_save_pip():58] save pip
+2021-12-07 22:52:26,713 DEBUG   HandlerThread:608522 [meta.py:_save_pip():72] save pip done
+2021-12-07 22:52:26,713 DEBUG   HandlerThread:608522 [meta.py:probe():252] probe done
+2021-12-07 22:52:26,717 DEBUG   SenderThread:608522 [sender.py:send():238] send: files
+2021-12-07 22:52:26,717 INFO    SenderThread:608522 [sender.py:_save_file():960] saving file wandb-metadata.json with policy now
+2021-12-07 22:52:26,723 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 22:52:26,724 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 22:52:27,688 INFO    Thread-8  :608522 [dir_watcher.py:_on_file_created():217] file/dir created: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/requirements.txt
+2021-12-07 22:52:27,689 INFO    Thread-8  :608522 [dir_watcher.py:_on_file_created():217] file/dir created: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/wandb-metadata.json
+2021-12-07 22:52:27,689 INFO    Thread-8  :608522 [dir_watcher.py:_on_file_created():217] file/dir created: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/output.log
+2021-12-07 22:52:27,689 INFO    Thread-8  :608522 [dir_watcher.py:_on_file_created():217] file/dir created: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/wandb-summary.json
+2021-12-07 22:52:27,721 INFO    Thread-11 :608522 [upload_job.py:push():137] Uploaded file /tmp/tmpw0vuyuuiwandb/226baogx-wandb-metadata.json
+2021-12-07 22:52:33,689 INFO    Thread-8  :608522 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/output.log
+2021-12-07 22:52:34,239 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:34,240 DEBUG   SenderThread:608522 [sender.py:send():238] send: telemetry
+2021-12-07 22:52:34,240 DEBUG   SenderThread:608522 [sender.py:send():238] send: exit
+2021-12-07 22:52:34,240 INFO    SenderThread:608522 [sender.py:send_exit():370] handling exit code: 1
+2021-12-07 22:52:34,240 INFO    SenderThread:608522 [sender.py:send_exit():372] handling runtime: 7
+2021-12-07 22:52:34,240 INFO    SenderThread:608522 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-07 22:52:34,240 INFO    SenderThread:608522 [sender.py:send_exit():382] send defer
+2021-12-07 22:52:34,241 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:34,241 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 22:52:34,241 INFO    HandlerThread:608522 [handler.py:handle_request_defer():147] handle defer: 0
+2021-12-07 22:52:34,241 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: defer
+2021-12-07 22:52:34,241 INFO    SenderThread:608522 [sender.py:send_request_defer():391] handle sender defer: 0
+2021-12-07 22:52:34,242 INFO    SenderThread:608522 [sender.py:transition_state():395] send defer: 1
+2021-12-07 22:52:34,242 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 22:52:34,242 INFO    HandlerThread:608522 [handler.py:handle_request_defer():147] handle defer: 1
+2021-12-07 22:52:34,315 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: defer
+2021-12-07 22:52:34,315 INFO    SenderThread:608522 [sender.py:send_request_defer():391] handle sender defer: 1
+2021-12-07 22:52:34,315 INFO    SenderThread:608522 [sender.py:transition_state():395] send defer: 2
+2021-12-07 22:52:34,316 DEBUG   SenderThread:608522 [sender.py:send():238] send: stats
+2021-12-07 22:52:34,316 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 22:52:34,316 INFO    HandlerThread:608522 [handler.py:handle_request_defer():147] handle defer: 2
+2021-12-07 22:52:34,317 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: defer
+2021-12-07 22:52:34,317 INFO    SenderThread:608522 [sender.py:send_request_defer():391] handle sender defer: 2
+2021-12-07 22:52:34,317 INFO    SenderThread:608522 [sender.py:transition_state():395] send defer: 3
+2021-12-07 22:52:34,317 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 22:52:34,317 INFO    HandlerThread:608522 [handler.py:handle_request_defer():147] handle defer: 3
+2021-12-07 22:52:34,317 DEBUG   SenderThread:608522 [sender.py:send():238] send: summary
+2021-12-07 22:52:34,317 INFO    SenderThread:608522 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-07 22:52:34,318 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: defer
+2021-12-07 22:52:34,318 INFO    SenderThread:608522 [sender.py:send_request_defer():391] handle sender defer: 3
+2021-12-07 22:52:34,318 INFO    SenderThread:608522 [sender.py:transition_state():395] send defer: 4
+2021-12-07 22:52:34,318 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 22:52:34,318 INFO    HandlerThread:608522 [handler.py:handle_request_defer():147] handle defer: 4
+2021-12-07 22:52:34,318 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: defer
+2021-12-07 22:52:34,318 INFO    SenderThread:608522 [sender.py:send_request_defer():391] handle sender defer: 4
+2021-12-07 22:52:34,342 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:34,689 INFO    Thread-8  :608522 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/output.log
+2021-12-07 22:52:34,690 INFO    Thread-8  :608522 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/wandb-summary.json
+2021-12-07 22:52:34,704 INFO    SenderThread:608522 [sender.py:transition_state():395] send defer: 5
+2021-12-07 22:52:34,704 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:34,705 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 22:52:34,705 INFO    HandlerThread:608522 [handler.py:handle_request_defer():147] handle defer: 5
+2021-12-07 22:52:34,705 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: defer
+2021-12-07 22:52:34,705 INFO    SenderThread:608522 [sender.py:send_request_defer():391] handle sender defer: 5
+2021-12-07 22:52:34,705 INFO    SenderThread:608522 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-12-07 22:52:34,806 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:35,690 INFO    Thread-8  :608522 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/config.yaml
+2021-12-07 22:52:35,691 INFO    SenderThread:608522 [dir_watcher.py:finish():313] scan: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files
+2021-12-07 22:52:35,691 INFO    SenderThread:608522 [dir_watcher.py:finish():327] scan save: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/output.log output.log
+2021-12-07 22:52:35,691 INFO    SenderThread:608522 [dir_watcher.py:finish():327] scan save: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/wandb-summary.json wandb-summary.json
+2021-12-07 22:52:35,692 INFO    SenderThread:608522 [dir_watcher.py:finish():327] scan save: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/config.yaml config.yaml
+2021-12-07 22:52:35,700 INFO    SenderThread:608522 [dir_watcher.py:finish():327] scan save: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/requirements.txt requirements.txt
+2021-12-07 22:52:35,700 INFO    SenderThread:608522 [dir_watcher.py:finish():327] scan save: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/wandb-metadata.json wandb-metadata.json
+2021-12-07 22:52:35,708 INFO    SenderThread:608522 [sender.py:transition_state():395] send defer: 6
+2021-12-07 22:52:35,709 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:35,709 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 22:52:35,709 INFO    HandlerThread:608522 [handler.py:handle_request_defer():147] handle defer: 6
+2021-12-07 22:52:35,710 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: defer
+2021-12-07 22:52:35,710 INFO    SenderThread:608522 [sender.py:send_request_defer():391] handle sender defer: 6
+2021-12-07 22:52:35,710 INFO    SenderThread:608522 [file_pusher.py:finish():177] shutting down file pusher
+2021-12-07 22:52:35,811 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:35,811 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:35,912 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:35,913 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:36,015 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:36,015 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:36,117 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:36,117 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:36,219 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:36,220 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:36,322 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:36,322 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:36,423 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:36,424 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:36,525 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:36,526 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:36,627 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:36,628 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:36,655 INFO    Thread-14 :608522 [upload_job.py:push():137] Uploaded file /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/config.yaml
+2021-12-07 22:52:36,666 INFO    Thread-13 :608522 [upload_job.py:push():137] Uploaded file /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/wandb-summary.json
+2021-12-07 22:52:36,675 INFO    Thread-15 :608522 [upload_job.py:push():137] Uploaded file /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/requirements.txt
+2021-12-07 22:52:36,693 INFO    Thread-12 :608522 [upload_job.py:push():137] Uploaded file /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/files/output.log
+2021-12-07 22:52:36,729 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:36,729 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:36,831 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:36,831 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:36,894 INFO    Thread-7  :608522 [sender.py:transition_state():395] send defer: 7
+2021-12-07 22:52:36,895 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 22:52:36,895 INFO    HandlerThread:608522 [handler.py:handle_request_defer():147] handle defer: 7
+2021-12-07 22:52:36,895 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: defer
+2021-12-07 22:52:36,895 INFO    SenderThread:608522 [sender.py:send_request_defer():391] handle sender defer: 7
+2021-12-07 22:52:36,933 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:36,974 INFO    SenderThread:608522 [sender.py:transition_state():395] send defer: 8
+2021-12-07 22:52:36,974 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:36,975 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 22:52:36,975 INFO    HandlerThread:608522 [handler.py:handle_request_defer():147] handle defer: 8
+2021-12-07 22:52:36,975 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: defer
+2021-12-07 22:52:36,975 INFO    SenderThread:608522 [sender.py:send_request_defer():391] handle sender defer: 8
+2021-12-07 22:52:36,975 INFO    SenderThread:608522 [sender.py:transition_state():395] send defer: 9
+2021-12-07 22:52:36,976 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 22:52:36,976 DEBUG   SenderThread:608522 [sender.py:send():238] send: final
+2021-12-07 22:52:36,976 INFO    HandlerThread:608522 [handler.py:handle_request_defer():147] handle defer: 9
+2021-12-07 22:52:36,976 DEBUG   SenderThread:608522 [sender.py:send():238] send: footer
+2021-12-07 22:52:36,976 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: defer
+2021-12-07 22:52:36,976 INFO    SenderThread:608522 [sender.py:send_request_defer():391] handle sender defer: 9
+2021-12-07 22:52:37,076 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 22:52:37,076 DEBUG   SenderThread:608522 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 22:52:37,077 INFO    SenderThread:608522 [file_pusher.py:join():182] waiting for file pusher
+2021-12-07 22:52:37,846 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: get_summary
+2021-12-07 22:52:37,846 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: sampled_history
+2021-12-07 22:52:37,847 DEBUG   HandlerThread:608522 [handler.py:handle_request():130] handle_request: shutdown
+2021-12-07 22:52:37,847 INFO    HandlerThread:608522 [handler.py:finish():731] shutting down handler
+2021-12-07 22:52:37,976 INFO    WriterThread:608522 [datastore.py:close():281] close: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/22-52-24/wandb/run-20211207_225225-31ipmy8j/run-31ipmy8j.wandb
+2021-12-07 22:52:38,844 INFO    SenderThread:608522 [sender.py:finish():1091] shutting down sender
+2021-12-07 22:52:38,845 INFO    SenderThread:608522 [file_pusher.py:finish():177] shutting down file pusher
+2021-12-07 22:52:38,845 INFO    SenderThread:608522 [file_pusher.py:join():182] waiting for file pusher
+2021-12-07 22:52:38,846 INFO    MainThread:608522 [internal.py:handle_exit():77] Internal process exited

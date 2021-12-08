@@ -1,0 +1,29 @@
+2021-12-07 23:00:31,684 INFO    MainThread:622604 [wandb_setup.py:_flush():71] setting env: {}
+2021-12-07 23:00:31,684 WARNING MainThread:622604 [wandb_setup.py:_flush():71] could not find program at main.py
+2021-12-07 23:00:31,684 INFO    MainThread:622604 [wandb_setup.py:_flush():71] setting login settings: {}
+2021-12-07 23:00:31,684 INFO    MainThread:622604 [wandb_setup.py:_flush():71] setting login settings: {}
+2021-12-07 23:00:31,684 INFO    MainThread:622604 [wandb_init.py:_log_setup():371] Logging user logs to /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/23-00-30/wandb/run-20211207_230031-bqb0ikcv/logs/debug.log
+2021-12-07 23:00:31,684 INFO    MainThread:622604 [wandb_init.py:_log_setup():372] Logging internal logs to /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/outputs/2021-12-07/23-00-30/wandb/run-20211207_230031-bqb0ikcv/logs/debug-internal.log
+2021-12-07 23:00:31,684 INFO    MainThread:622604 [wandb_init.py:init():404] calling init triggers
+2021-12-07 23:00:31,684 INFO    MainThread:622604 [wandb_init.py:init():409] wandb.init called with sweep_config: {}
+config: {'_metadata': ContainerMetadata(ref_type=typing.Any, object_type=None, optional=True, key=None, flags={'struct': True}, flags_root=False, resolver_cache=defaultdict(<class 'dict'>, {'now': {('%Y-%m-%d',): '2021-12-07', ('%H-%M-%S',): '23-00-30'}}), key_type=typing.Any, element_type=typing.Any), '_parent': None, '_flags_cache': {'struct': True}, '_content': {'models': {'encoder': 'vanilla', 'decoder': 'vanilla', 'hidden_dim': 50, 'hidden_sub_dim': 30}, 'train': {'test': False, 'debug': False, 'num_epochs': 100, 'batch_size': 10, 'weight_decay': 0.001, 'learning_rate': 0.012, 'num_workers': 22, 'beta': 1}, 'wandb': {'log_metrics': True, 'watch_loss': True}}}
+2021-12-07 23:00:31,684 INFO    MainThread:622604 [wandb_init.py:init():449] starting backend
+2021-12-07 23:00:31,684 INFO    MainThread:622604 [backend.py:_multiprocessing_setup():95] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-12-07 23:00:31,694 INFO    MainThread:622604 [backend.py:ensure_launched():199] starting backend process...
+2021-12-07 23:00:31,699 INFO    MainThread:622604 [backend.py:ensure_launched():204] started backend process with pid: 622658
+2021-12-07 23:00:31,700 INFO    MainThread:622604 [wandb_init.py:init():458] backend started and connected
+2021-12-07 23:00:31,701 INFO    MainThread:622604 [wandb_init.py:init():519] updated telemetry
+2021-12-07 23:00:31,711 INFO    MainThread:622604 [wandb_init.py:init():549] communicating current version
+2021-12-07 23:00:32,550 INFO    MainThread:622604 [wandb_init.py:init():554] got version response 
+2021-12-07 23:00:32,550 INFO    MainThread:622604 [wandb_init.py:init():564] communicating run to backend with 30 second timeout
+2021-12-07 23:00:32,982 INFO    MainThread:622604 [wandb_init.py:init():592] starting run threads in backend
+2021-12-07 23:00:33,015 INFO    MainThread:622604 [wandb_run.py:_console_start():1816] atexit reg
+2021-12-07 23:00:33,015 INFO    MainThread:622604 [wandb_run.py:_redirect():1690] redirect: SettingsConsole.REDIRECT
+2021-12-07 23:00:33,016 INFO    MainThread:622604 [wandb_run.py:_redirect():1695] Redirecting console.
+2021-12-07 23:00:33,017 INFO    MainThread:622604 [wandb_run.py:_redirect():1751] Redirects installed.
+2021-12-07 23:00:33,017 INFO    MainThread:622604 [wandb_init.py:init():619] run started, returning control to user process
+2021-12-07 23:00:38,104 INFO    MainThread:622604 [wandb_watch.py:watch():43] Watching
+2021-12-07 23:01:40,713 INFO    MainThread:622604 [wandb_run.py:finish():1463] finishing run beegass/BeeGass-VAE/bqb0ikcv
+2021-12-07 23:01:40,713 INFO    MainThread:622604 [wandb_run.py:_atexit_cleanup():1786] got exitcode: 1
+2021-12-07 23:01:40,713 INFO    MainThread:622604 [wandb_run.py:_restore():1758] restore
+2021-12-07 23:01:47,838 INFO    MainThread:622604 [wandb_run.py:_wait_for_finish():1916] got exit ret: None

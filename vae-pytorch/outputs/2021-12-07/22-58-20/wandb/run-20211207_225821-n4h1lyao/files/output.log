@@ -1,0 +1,17 @@
+9913344it [00:00, 18594935.93it/s]
+29696it [00:00, 65211545.33it/s]
+1649664it [00:00, 11877993.13it/s]
+5120it [00:00, 22510310.78it/s]
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting ./vae-pytorch/src/data/MNIST/raw/train-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting ./vae-pytorch/src/data/MNIST/raw/train-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/t10k-images-idx3-ubyte.gz
+Extracting ./vae-pytorch/src/data/MNIST/raw/t10k-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting ./vae-pytorch/src/data/MNIST/raw/t10k-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+beginning run

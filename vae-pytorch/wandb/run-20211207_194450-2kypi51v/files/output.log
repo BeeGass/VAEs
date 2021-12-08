@@ -1,0 +1,196 @@
+
+beginning experiment
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/train-images-idx3-ubyte.gz
+Extracting ./vae-pytorch/src/data/MNIST/raw/train-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/train-labels-idx1-ubyte.gz
+Extracting ./vae-pytorch/src/data/MNIST/raw/train-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/t10k-images-idx3-ubyte.gz
+9913344it [00:00, 19659728.35it/s]
+29696it [00:00, 65382704.24it/s]
+  0%|                                   | 0/1648877 [00:00<?, ?it/s]
+Extracting ./vae-pytorch/src/data/MNIST/raw/t10k-images-idx3-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+Downloading http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw/t10k-labels-idx1-ubyte.gz
+Extracting ./vae-pytorch/src/data/MNIST/raw/t10k-labels-idx1-ubyte.gz to ./vae-pytorch/src/data/MNIST/raw
+1649664it [00:00, 11692130.40it/s]
+5120it [00:00, 24320313.11it/s]
+Epoch: 1
+Train Loss: 0.07604096084833145
+Test Loss: 0.07779794931411743
+Epoch: 2
+Train Loss: 0.0761331245303154
+Test Loss: 0.07785524427890778
+Epoch: 3
+Train Loss: 0.07610413432121277
+Test Loss: 0.07749834656715393
+Epoch: 4
+Train Loss: 0.07594995945692062
+Test Loss: 0.07731477171182632
+Epoch: 5
+Train Loss: 0.07576712220907211
+Test Loss: 0.07709680497646332
+Epoch: 6
+Train Loss: 0.07573089748620987
+Test Loss: 0.0770118236541748
+Epoch: 7
+Train Loss: 0.07571594417095184
+Test Loss: 0.07692757993936539
+Epoch: 8
+Train Loss: 0.07577701658010483
+Test Loss: 0.07693371176719666
+Epoch: 9
+Train Loss: 0.07572407275438309
+Test Loss: 0.07690812647342682
+Epoch: 10
+Train Loss: 0.07598719745874405
+Test Loss: 0.07709655910730362
+Epoch: 11
+Train Loss: 0.07581354677677155
+Test Loss: 0.07694721221923828
+Epoch: 12
+Train Loss: 0.07598096877336502
+Test Loss: 0.07709775865077972
+Epoch: 13
+Train Loss: 0.07566047459840775
+Test Loss: 0.07692259550094604
+Epoch: 14
+Train Loss: 0.07566440850496292
+Test Loss: 0.07693025469779968
+Epoch: 15
+Train Loss: 0.07583301514387131
+Test Loss: 0.07704515755176544
+Epoch    15: reducing learning rate of group 0 to 5.0000e-04.
+Epoch: 16
+Train Loss: 0.07344119250774384
+Test Loss: 0.07679815590381622
+Epoch: 17
+Train Loss: 0.07342999428510666
+Test Loss: 0.07680273056030273
+Epoch: 18
+Train Loss: 0.07343688607215881
+Test Loss: 0.07679449766874313
+Epoch: 19
+Train Loss: 0.07342942804098129
+Test Loss: 0.07680496573448181
+Epoch: 20
+Train Loss: 0.07342471927404404
+Test Loss: 0.0767996683716774
+Epoch: 21
+Train Loss: 0.07343655824661255
+Test Loss: 0.0767955482006073
+Epoch: 22
+Train Loss: 0.07342119514942169
+Test Loss: 0.07680641859769821
+Epoch    22: reducing learning rate of group 0 to 5.0000e-05.
+Epoch: 23
+Train Loss: 0.0733514130115509
+Test Loss: 0.0766763985157013
+Epoch: 24
+Train Loss: 0.07334133237600327
+Test Loss: 0.07666685432195663
+Epoch: 25
+Train Loss: 0.0733422040939331
+Test Loss: 0.07667676359415054
+Epoch: 26
+Train Loss: 0.07334525138139725
+Test Loss: 0.07667728513479233
+Epoch: 27
+Train Loss: 0.07334202527999878
+Test Loss: 0.07667355984449387
+Epoch: 28
+Train Loss: 0.07334352284669876
+Test Loss: 0.0766744539141655
+Epoch: 29
+Train Loss: 0.07334420084953308
+Test Loss: 0.07667600363492966
+Epoch: 30
+Train Loss: 0.07334119081497192
+Test Loss: 0.07667624205350876
+Epoch    30: reducing learning rate of group 0 to 5.0000e-06.
+Epoch: 31
+Train Loss: 0.07337634265422821
+Test Loss: 0.07662366330623627
+Epoch: 32
+Train Loss: 0.07337910681962967
+Test Loss: 0.07661353051662445
+Epoch: 33
+Train Loss: 0.07338375598192215
+Test Loss: 0.07660946249961853
+Epoch: 34
+Train Loss: 0.07338270545005798
+Test Loss: 0.07660795748233795
+Epoch: 35
+Train Loss: 0.07338183373212814
+Test Loss: 0.07660882920026779
+Epoch: 36
+Train Loss: 0.07337676733732224
+Test Loss: 0.07660850137472153
+Epoch: 37
+Train Loss: 0.0733737200498581
+Test Loss: 0.07661034911870956
+Epoch: 38
+Train Loss: 0.07337763160467148
+Test Loss: 0.07661066204309464
+Epoch    38: reducing learning rate of group 0 to 5.0000e-07.
+Epoch: 39
+Train Loss: 0.07337682694196701
+Test Loss: 0.07661044597625732
+Epoch: 40
+Train Loss: 0.07337690144777298
+Test Loss: 0.07660867273807526
+Exception in thread Thread-92:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in _pin_memory_loop
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/usr/lib/python3.8/multiprocessing/queues.py", line 116, in get
+    return _ForkingPickler.loads(res)
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/torch/multiprocessing/reductions.py", line 289, in rebuild_storage_fd
+    fd = df.detach()
+  File "/usr/lib/python3.8/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/usr/lib/python3.8/multiprocessing/resource_sharer.py", line 87, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 508, in Client
+    answer_challenge(c, authkey)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 757, in answer_challenge
+    response = connection.recv_bytes(256)        # reject large message
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 414, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/lib/python3.8/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "main.py", line 66, in <module>
+    config_run()
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/main.py", line 48, in decorated_main
+    _run_hydra(
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/_internal/utils.py", line 377, in _run_hydra
+    run_and_report(
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/_internal/utils.py", line 211, in run_and_report
+    return func()
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/_internal/utils.py", line 378, in <lambda>
+    lambda: hydra.run(
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/_internal/hydra.py", line 98, in run
+    ret = run_job(
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/hydra/core/utils.py", line 160, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "main.py", line 36, in config_run
+    run(model=model,
+  File "main.py", line 51, in run
+    train_loss, mod, dev = train(mod, optimizer, train_loader, dev, log_metrics, watch_loss)
+  File "/home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/src/train_test/train.py", line 29, in train
+    loss.backward()
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/torch/_tensor.py", line 307, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/home/beegass/.virtualenvs/dl_1/lib/python3.8/site-packages/torch/autograd/__init__.py", line 154, in backward
+    Variable._execution_engine.run_backward(
+KeyboardInterrupt
