@@ -1,8 +1,8 @@
 import numpy as np
 import torch
 import torch.nn as nn
-from vae_encoder import Encoder
-from vae_decoder import Decoder
+from src.encoder.vae_encoder import Encoder
+from src.decoder.vae_decoder import Decoder
 
 class VAE(nn.Module):
     def __init__(self, latent_vector_dim, sub_dim, train_bool=True, encoder_type='vanilla', decoder_type='vanilla'):

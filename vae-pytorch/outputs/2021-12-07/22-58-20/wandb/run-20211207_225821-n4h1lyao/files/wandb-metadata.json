@@ -1,0 +1,23 @@
+{
+    "os": "Linux-5.11.0-41-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2021-12-08T03:58:22.449139",
+    "startedAt": "2021-12-08T03:58:21.199554",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "gpu_count": 1,
+    "cpu_count": 24,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "main.py",
+    "git": {
+        "remote": "git@github.com:BeeGass/Readable-VAEs.git",
+        "commit": "9afef6b83bfbd7cbf120db385db2742e55a2c8a3"
+    },
+    "email": "bryank123@live.com",
+    "root": "/home/beegass/Documents/Coding/Readable-VAEs",
+    "host": "beegass",
+    "username": "beegass",
+    "executable": "/home/beegass/.virtualenvs/dl_1/bin/python"
+}

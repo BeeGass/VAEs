@@ -8,14 +8,14 @@ def prepare_datasets():
     
     # Download the MNIST Dataset
     trainset = datasets.MNIST(
-        root = './vae-pytorch/data',
+        root = './vae-pytorch/src/data',
         train = True, 
         download = True,
         transform = tensor_transform
     )
     
     testset = datasets.MNIST(
-        root = './vae-pytorch/data',
+        root = './vae-pytorch/src/data',
         train = False,
         download = True,
         transform = tensor_transform

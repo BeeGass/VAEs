@@ -1,0 +1,386 @@
+2021-12-07 20:13:41,854 INFO    MainThread:382110 [internal.py:wandb_internal():87] W&B internal server running at pid: 382110, started at: 2021-12-07 20:13:41.854484
+2021-12-07 20:13:41,857 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: check_version
+2021-12-07 20:13:41,857 INFO    WriterThread:382110 [datastore.py:open_for_write():77] open: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/run-3fis55ej.wandb
+2021-12-07 20:13:41,859 DEBUG   SenderThread:382110 [sender.py:send():238] send: header
+2021-12-07 20:13:41,859 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: check_version
+2021-12-07 20:13:42,264 DEBUG   SenderThread:382110 [sender.py:send():238] send: run
+2021-12-07 20:13:42,641 INFO    SenderThread:382110 [dir_watcher.py:__init__():169] watching files in: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files
+2021-12-07 20:13:42,642 INFO    SenderThread:382110 [sender.py:_start_run_threads():825] run started: 3fis55ej with start time 1638926021
+2021-12-07 20:13:42,642 DEBUG   SenderThread:382110 [sender.py:send():238] send: summary
+2021-12-07 20:13:42,642 INFO    SenderThread:382110 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-07 20:13:42,642 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: run_start
+2021-12-07 20:13:42,646 DEBUG   HandlerThread:382110 [meta.py:__init__():40] meta init
+2021-12-07 20:13:42,646 DEBUG   HandlerThread:382110 [meta.py:__init__():54] meta init done
+2021-12-07 20:13:42,646 DEBUG   HandlerThread:382110 [meta.py:probe():214] probe
+2021-12-07 20:13:42,652 DEBUG   HandlerThread:382110 [meta.py:_setup_git():204] setup git
+2021-12-07 20:13:42,666 DEBUG   HandlerThread:382110 [meta.py:_setup_git():211] setup git done
+2021-12-07 20:13:42,666 DEBUG   HandlerThread:382110 [meta.py:_save_pip():58] save pip
+2021-12-07 20:13:42,666 DEBUG   HandlerThread:382110 [meta.py:_save_pip():72] save pip done
+2021-12-07 20:13:42,666 DEBUG   HandlerThread:382110 [meta.py:probe():252] probe done
+2021-12-07 20:13:42,670 DEBUG   SenderThread:382110 [sender.py:send():238] send: files
+2021-12-07 20:13:42,670 INFO    SenderThread:382110 [sender.py:_save_file():960] saving file wandb-metadata.json with policy now
+2021-12-07 20:13:42,675 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:13:42,675 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:13:43,644 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_created():217] file/dir created: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/wandb-summary.json
+2021-12-07 20:13:43,644 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_created():217] file/dir created: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/requirements.txt
+2021-12-07 20:13:43,644 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_created():217] file/dir created: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:13:43,644 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_created():217] file/dir created: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/wandb-metadata.json
+2021-12-07 20:13:43,667 INFO    Thread-11 :382110 [upload_job.py:push():137] Uploaded file /tmp/tmpjmjpj1kqwandb/2qnc5dvn-wandb-metadata.json
+2021-12-07 20:13:45,643 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:13:47,644 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:13:49,645 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:13:58,050 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:13:58,050 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:14:10,955 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:14:13,422 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:14:13,422 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:14:23,657 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:14:28,782 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:14:28,782 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:14:41,248 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:14:44,164 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:14:44,164 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:14:55,667 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:14:59,524 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:14:59,525 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:15:11,548 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:15:14,640 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:15:14,640 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:15:27,678 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:15:30,006 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:15:30,006 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:15:41,865 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:15:45,371 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:15:45,372 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:16:00,826 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:16:00,826 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:16:01,695 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:16:12,157 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:16:16,258 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:16:16,259 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:16:31,605 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:16:31,605 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:16:37,709 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:16:42,455 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:16:46,999 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:16:47,000 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:17:02,361 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:17:02,361 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:17:12,779 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:17:13,721 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:17:17,718 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:17:17,718 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:17:33,092 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:17:33,093 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:17:43,077 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:17:45,732 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:17:48,453 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:17:48,454 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:18:03,831 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:18:03,831 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:18:13,375 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:18:19,216 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:18:19,217 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:18:19,743 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:18:34,704 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:18:34,704 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:18:43,668 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:18:50,159 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:18:50,159 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:18:53,755 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:19:05,529 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:19:05,529 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:19:13,960 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:19:20,958 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:19:20,958 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:19:25,766 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:19:36,110 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:19:36,110 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:19:44,241 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:19:51,602 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:19:51,603 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:19:58,776 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:20:06,986 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:20:06,986 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:20:14,543 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:20:22,340 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:20:22,341 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:20:30,786 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:20:37,689 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:20:37,689 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:20:44,831 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:20:53,056 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:20:53,056 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:21:04,798 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:21:08,476 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:21:08,476 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:21:15,121 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:21:23,832 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:21:23,832 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:21:36,809 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:21:39,176 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:21:39,176 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:21:45,416 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:21:54,543 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:21:54,543 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:22:08,819 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:22:09,917 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:22:09,917 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:22:15,715 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:22:25,288 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:22:25,288 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:22:40,708 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:22:40,709 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:22:42,830 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:22:46,008 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:22:56,321 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:22:56,322 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:23:11,699 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:23:11,700 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:23:14,840 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:23:16,295 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:23:27,159 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:23:27,160 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:23:42,522 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:23:42,522 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:23:46,585 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:23:46,850 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:23:57,892 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:23:57,892 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:24:13,274 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:24:13,274 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:24:16,877 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:24:18,860 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:24:28,665 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:24:28,665 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:24:44,033 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:24:44,034 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:24:47,161 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:24:51,871 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:24:59,415 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:24:59,415 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:25:14,785 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:25:14,785 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:25:17,415 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:25:21,879 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:25:30,159 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:25:30,159 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:25:45,536 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:25:45,536 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:25:47,682 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:25:51,887 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:26:00,931 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:26:00,932 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:26:16,337 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:26:16,338 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:26:17,930 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:26:23,894 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:26:31,731 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:26:31,731 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:26:47,103 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:26:47,103 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:26:48,196 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:26:53,902 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:27:02,492 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:27:02,492 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:27:17,861 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:27:17,861 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:27:18,474 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:27:23,909 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:27:33,272 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:27:33,272 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:27:48,645 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:27:48,646 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:27:49,008 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:27:53,916 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:28:04,027 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:28:04,028 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:28:18,997 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:28:19,380 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:28:19,381 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:28:23,924 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:28:34,843 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:28:34,843 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:28:49,262 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:28:50,214 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:28:50,214 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:28:53,931 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:29:05,596 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:29:05,596 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:29:19,542 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:29:20,731 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:29:20,731 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:29:25,939 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:29:36,110 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:29:36,110 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:29:49,801 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:29:51,249 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:29:51,250 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:29:55,947 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:30:06,616 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:30:06,617 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:30:20,062 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:30:21,776 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:30:21,776 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:30:25,955 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:30:37,146 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:30:37,146 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:30:50,336 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:30:52,541 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:30:52,542 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:30:58,964 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:31:07,923 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:31:07,924 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:31:20,606 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:31:23,330 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:31:23,330 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:31:28,971 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:31:38,694 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:31:38,694 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:31:50,868 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:31:54,099 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:31:54,100 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:31:58,979 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:32:09,519 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:32:09,519 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:32:21,140 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:32:24,929 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:32:24,929 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:32:28,986 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:32:40,395 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:32:40,395 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:32:51,416 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:32:55,786 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:32:55,786 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:32:58,994 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:33:11,203 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:33:11,203 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:33:21,675 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:33:26,590 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:33:26,591 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:33:29,002 INFO    Thread-8  :382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:33:41,999 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: stop_status
+2021-12-07 20:33:41,999 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: stop_status
+2021-12-07 20:33:51,942 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:33:53,922 WARNING MainThread:382110 [internal.py:wandb_internal():146] Internal process interrupt: 1
+2021-12-07 20:33:56,484 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:56,484 DEBUG   SenderThread:382110 [sender.py:send():238] send: telemetry
+2021-12-07 20:33:56,484 DEBUG   SenderThread:382110 [sender.py:send():238] send: exit
+2021-12-07 20:33:56,484 INFO    SenderThread:382110 [sender.py:send_exit():370] handling exit code: 255
+2021-12-07 20:33:56,485 INFO    SenderThread:382110 [sender.py:send_exit():372] handling runtime: 1213
+2021-12-07 20:33:56,485 INFO    SenderThread:382110 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-07 20:33:56,485 INFO    SenderThread:382110 [sender.py:send_exit():382] send defer
+2021-12-07 20:33:56,485 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:56,486 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 20:33:56,486 INFO    HandlerThread:382110 [handler.py:handle_request_defer():147] handle defer: 0
+2021-12-07 20:33:56,486 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: defer
+2021-12-07 20:33:56,486 INFO    SenderThread:382110 [sender.py:send_request_defer():391] handle sender defer: 0
+2021-12-07 20:33:56,486 INFO    SenderThread:382110 [sender.py:transition_state():395] send defer: 1
+2021-12-07 20:33:56,487 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 20:33:56,487 INFO    HandlerThread:382110 [handler.py:handle_request_defer():147] handle defer: 1
+2021-12-07 20:33:56,593 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: defer
+2021-12-07 20:33:56,593 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:56,593 INFO    SenderThread:382110 [sender.py:send_request_defer():391] handle sender defer: 1
+2021-12-07 20:33:56,593 INFO    SenderThread:382110 [sender.py:transition_state():395] send defer: 2
+2021-12-07 20:33:56,593 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:56,593 DEBUG   SenderThread:382110 [sender.py:send():238] send: stats
+2021-12-07 20:33:56,594 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 20:33:56,594 INFO    HandlerThread:382110 [handler.py:handle_request_defer():147] handle defer: 2
+2021-12-07 20:33:56,594 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: defer
+2021-12-07 20:33:56,594 INFO    SenderThread:382110 [sender.py:send_request_defer():391] handle sender defer: 2
+2021-12-07 20:33:56,594 INFO    SenderThread:382110 [sender.py:transition_state():395] send defer: 3
+2021-12-07 20:33:56,594 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 20:33:56,594 INFO    HandlerThread:382110 [handler.py:handle_request_defer():147] handle defer: 3
+2021-12-07 20:33:56,595 DEBUG   SenderThread:382110 [sender.py:send():238] send: summary
+2021-12-07 20:33:56,595 INFO    SenderThread:382110 [sender.py:_save_file():960] saving file wandb-summary.json with policy end
+2021-12-07 20:33:56,595 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: defer
+2021-12-07 20:33:56,595 INFO    SenderThread:382110 [sender.py:send_request_defer():391] handle sender defer: 3
+2021-12-07 20:33:56,595 INFO    SenderThread:382110 [sender.py:transition_state():395] send defer: 4
+2021-12-07 20:33:56,595 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 20:33:56,595 INFO    HandlerThread:382110 [handler.py:handle_request_defer():147] handle defer: 4
+2021-12-07 20:33:56,595 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: defer
+2021-12-07 20:33:56,595 INFO    SenderThread:382110 [sender.py:send_request_defer():391] handle sender defer: 4
+2021-12-07 20:33:56,695 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:56,980 INFO    SenderThread:382110 [sender.py:transition_state():395] send defer: 5
+2021-12-07 20:33:56,981 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:56,981 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 20:33:56,981 INFO    HandlerThread:382110 [handler.py:handle_request_defer():147] handle defer: 5
+2021-12-07 20:33:56,981 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: defer
+2021-12-07 20:33:56,982 INFO    SenderThread:382110 [sender.py:send_request_defer():391] handle sender defer: 5
+2021-12-07 20:33:56,982 INFO    SenderThread:382110 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-12-07 20:33:57,005 INFO    SenderThread:382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/wandb-summary.json
+2021-12-07 20:33:57,005 INFO    SenderThread:382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:33:57,006 INFO    SenderThread:382110 [dir_watcher.py:_on_file_modified():230] file/dir modified: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/config.yaml
+2021-12-07 20:33:57,006 INFO    SenderThread:382110 [dir_watcher.py:finish():313] scan: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files
+2021-12-07 20:33:57,006 INFO    SenderThread:382110 [dir_watcher.py:finish():327] scan save: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log output.log
+2021-12-07 20:33:57,006 INFO    SenderThread:382110 [dir_watcher.py:finish():327] scan save: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/wandb-summary.json wandb-summary.json
+2021-12-07 20:33:57,006 INFO    SenderThread:382110 [dir_watcher.py:finish():327] scan save: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/config.yaml config.yaml
+2021-12-07 20:33:57,006 INFO    SenderThread:382110 [dir_watcher.py:finish():327] scan save: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/requirements.txt requirements.txt
+2021-12-07 20:33:57,010 INFO    SenderThread:382110 [dir_watcher.py:finish():327] scan save: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/wandb-metadata.json wandb-metadata.json
+2021-12-07 20:33:57,010 INFO    SenderThread:382110 [sender.py:transition_state():395] send defer: 6
+2021-12-07 20:33:57,019 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 20:33:57,022 INFO    HandlerThread:382110 [handler.py:handle_request_defer():147] handle defer: 6
+2021-12-07 20:33:57,023 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: defer
+2021-12-07 20:33:57,023 INFO    SenderThread:382110 [sender.py:send_request_defer():391] handle sender defer: 6
+2021-12-07 20:33:57,023 INFO    SenderThread:382110 [file_pusher.py:finish():177] shutting down file pusher
+2021-12-07 20:33:57,083 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:57,083 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:57,184 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:57,185 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:57,286 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:57,287 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:57,388 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:57,388 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:57,490 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:57,490 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:57,591 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:57,592 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:57,693 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:57,694 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:57,795 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:57,795 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:57,897 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:57,897 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:57,998 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:57,999 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:58,016 INFO    Thread-14 :382110 [upload_job.py:push():137] Uploaded file /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/config.yaml
+2021-12-07 20:33:58,021 INFO    Thread-13 :382110 [upload_job.py:push():137] Uploaded file /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/wandb-summary.json
+2021-12-07 20:33:58,036 INFO    Thread-15 :382110 [upload_job.py:push():137] Uploaded file /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/requirements.txt
+2021-12-07 20:33:58,100 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:58,101 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:58,143 INFO    Thread-12 :382110 [upload_job.py:push():137] Uploaded file /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/files/output.log
+2021-12-07 20:33:58,202 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:58,202 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:58,304 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:58,304 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:58,344 INFO    Thread-7  :382110 [sender.py:transition_state():395] send defer: 7
+2021-12-07 20:33:58,344 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 20:33:58,345 INFO    HandlerThread:382110 [handler.py:handle_request_defer():147] handle defer: 7
+2021-12-07 20:33:58,345 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: defer
+2021-12-07 20:33:58,345 INFO    SenderThread:382110 [sender.py:send_request_defer():391] handle sender defer: 7
+2021-12-07 20:33:58,405 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:58,517 INFO    SenderThread:382110 [sender.py:transition_state():395] send defer: 8
+2021-12-07 20:33:58,518 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:58,518 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 20:33:58,518 INFO    HandlerThread:382110 [handler.py:handle_request_defer():147] handle defer: 8
+2021-12-07 20:33:58,518 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: defer
+2021-12-07 20:33:58,519 INFO    SenderThread:382110 [sender.py:send_request_defer():391] handle sender defer: 8
+2021-12-07 20:33:58,519 INFO    SenderThread:382110 [sender.py:transition_state():395] send defer: 9
+2021-12-07 20:33:58,519 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: defer
+2021-12-07 20:33:58,519 DEBUG   SenderThread:382110 [sender.py:send():238] send: final
+2021-12-07 20:33:58,519 INFO    HandlerThread:382110 [handler.py:handle_request_defer():147] handle defer: 9
+2021-12-07 20:33:58,519 DEBUG   SenderThread:382110 [sender.py:send():238] send: footer
+2021-12-07 20:33:58,520 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: defer
+2021-12-07 20:33:58,520 INFO    SenderThread:382110 [sender.py:send_request_defer():391] handle sender defer: 9
+2021-12-07 20:33:58,619 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: poll_exit
+2021-12-07 20:33:58,620 DEBUG   SenderThread:382110 [sender.py:send_request():252] send_request: poll_exit
+2021-12-07 20:33:58,620 INFO    SenderThread:382110 [file_pusher.py:join():182] waiting for file pusher
+2021-12-07 20:33:59,417 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: get_summary
+2021-12-07 20:33:59,418 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: sampled_history
+2021-12-07 20:33:59,419 DEBUG   HandlerThread:382110 [handler.py:handle_request():130] handle_request: shutdown
+2021-12-07 20:33:59,419 INFO    HandlerThread:382110 [handler.py:finish():731] shutting down handler
+2021-12-07 20:33:59,519 INFO    WriterThread:382110 [datastore.py:close():281] close: /home/beegass/Documents/Coding/Readable-VAEs/vae-pytorch/wandb/run-20211207_201341-3fis55ej/run-3fis55ej.wandb
+2021-12-07 20:34:00,416 INFO    SenderThread:382110 [sender.py:finish():1091] shutting down sender
+2021-12-07 20:34:00,417 INFO    SenderThread:382110 [file_pusher.py:finish():177] shutting down file pusher
+2021-12-07 20:34:00,417 INFO    SenderThread:382110 [file_pusher.py:join():182] waiting for file pusher
+2021-12-07 20:34:00,418 INFO    MainThread:382110 [internal.py:handle_exit():77] Internal process exited
