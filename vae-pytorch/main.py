@@ -15,9 +15,9 @@ import sys
 def config_run(cfg : DictConfig) -> None:
     wandb.login()
     with wandb.init(project="BeeGass-VAE", entity="beegass", config=cfg): # initialize wandb project for logging
-        if cfg["wandb"]["tune"]:
-            sweep_id = wandb.sweep(cfg, project="BeeGass-VAE", entity="beegass")
-            wandb.agent(sweep_id, function=train)
+        # if cfg["wandb"]["tune"]:
+        #     sweep_id = wandb.sweep(cfg, project="BeeGass-VAE", entity="beegass")
+        #     wandb.agent(sweep_id, function=train)
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu") # check if GPU is available
         model = VAE(latent_vector_dim=cfg["models"]["hidden_dim"], 
                     sub_dim=cfg["models"]["hidden_sub_dim"], 
