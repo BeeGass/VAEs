@@ -19,7 +19,7 @@
 
 </p>
 
-A collection of Variational AutoEncoders (VAEs) I have implemented in [jax](https://github.com/google/jax)/[flax](https://github.com/google/flax), [flux](https://fluxml.ai/) and [pytorch](https://pytorch.org/) with particular effort put into readability and reproducibility. 
+A collection of Variational AutoEncoders (VAEs) I have implemented in [jax](https://github.com/google/jax)/[flax](https://github.com/google/flax), [flux](https://fluxml.ai/) and [pytorch](https://PyTorch.org/) with particular effort put into readability and reproducibility. 
 
 ## Python 
 ### Requirements For Jax
