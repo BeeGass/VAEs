@@ -1,28 +1,32 @@
-sweep:
-  method: bayes
-  metric:
-    name: elbo_loss
-    goal: minimize
-  parameters:
-    epochs:
-      value: 10
-    batch_size: 
-      value: [1, 64, 128, 256, 512]
-    weight_decay:
-      value: [1e-4, 1e-5, 1e-6, 1e-7]
-    learning_rate: 
-      value: [0.001, 0.01, 0.003]
-    beta:
-      value: 1
-    hidden_dim:
-      value: [96, 128, 148]
-    hidden_sub_dim: 
-      value: [1, 10, 20, 30, 40, 50]
-  early_terminate:
-    type: hyperband
-    s: 2
-    eta: 3
-    max_iter: 27
+program: main.py
+method: bayes
+metric:
+  goal: minimize
+  name: elbo_loss
+parameters:
+  hidden_dim:
+    values: [96, 128, 148]
+  hidden_sub_dim:
+    values: [1, 10, 20, 30, 40, 50]
+  num_epochs:
+    values: [10, 50, 75, 100, 150, 200]
+  batch_size:
+    values: [1, 64, 128, 256, 512]
+  learning_rate:
+    values: [0.001, 0.01, 0.003]
+  weight_decay:
+    values: [1e-4, 1e-5, 1e-6, 1e-7]
+  beta:
+    value: 1
+  num_workers:
+    value: 22
+early_terminate:
+  type: hyperband
+  s: 2
+  eta: 3
+  max_iter: 27
+
+
 
     
   
