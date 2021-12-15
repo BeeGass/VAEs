@@ -31,23 +31,19 @@ A collection of Variational AutoEncoders (VAEs) I have implemented in [jax](http
 
 ### Installation
 ```
-$ TBA
+$ git clone https://github.com/BeeGass/Readable-VAEs.git
 ```
 
 ### Usage
 ```
-$ TBA
+$ cd Readable-VAEs/vae-pytorch
+$ python main.py 
 ```
 
 ## Julia
 ### Requirements For Flux
 - TODO
 - TODO
-
-### Installation
-```
-$ TBA
-```
 
 ### Usage
 ```
