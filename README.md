@@ -26,15 +26,21 @@ A collection of Variational AutoEncoders (VAEs) I have implemented in [jax](http
 - Python >= 3.8
 - jax
 
-### Requirements For PyTorch
-- PyTorch >= 1.10
-
-### Installation
+#### Installation
 ```
 $ git clone https://github.com/BeeGass/Readable-VAEs.git
 ```
 
-### Usage
+#### Usage
+```
+$ cd Readable-VAEs/vae-jax
+$ python main.py 
+```
+
+### Requirements For PyTorch
+- PyTorch >= 1.10
+
+#### Usage
 ```
 $ cd Readable-VAEs/vae-pytorch
 $ python main.py 
@@ -45,9 +51,10 @@ $ python main.py
 - TODO
 - TODO
 
-### Usage
+#### Usage
 ```
-$ TBA
+$ cd Readable-VAEs/vae-flux
+$ # TBA 
 ```
 --- 
 
