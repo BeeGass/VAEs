@@ -1,20 +1,18 @@
 models:
   encoder: vanilla # choices=['vanilla', 'conv', 'resnet']
   decoder: vanilla # choices=['vanilla', 'conv', 'resnet']
-  hidden_dim: 50 
-  hidden_sub_dim: 30 
-
-train:
-  test: False
-  debug: False
+  test_bool: True
+parameters:
+  optimizer: adam
+  scheduler: reduce_lr
+  hidden_dim: 50
+  hidden_sub_dim: 30
   num_epochs: 100
   batch_size: 10
   weight_decay: 0.001
   learning_rate: 0.001
   num_workers: 22
   beta: 1
-
 wandb:
   log_metrics: True
   watch_loss: True
-  tune: False

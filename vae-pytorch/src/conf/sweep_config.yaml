@@ -1,9 +1,13 @@
 program: main.py
-method: bayes
+method: random
 metric:
-  goal: minimize
   name: elbo_loss
+  goal: minimize
 parameters:
+  optimizer:
+    value: adam
+  scheduler:
+    value: reduce_lr
   hidden_dim:
     values: [96, 128, 148]
   hidden_sub_dim:
@@ -12,21 +16,36 @@ parameters:
     values: [10, 50, 75, 100, 150, 200]
   batch_size:
     values: [1, 64, 128, 256, 512]
-  learning_rate:
-    values: [0.001, 0.01, 0.003]
   weight_decay:
-    values: [1e-4, 1e-5, 1e-6, 1e-7]
-  beta:
-    value: 1
+    distribution: uniform
+    min: 0
+    max: 0.1
+  learning_rate:
+    distribution: uniform
+    min: 0
+    max: 0.1
   num_workers:
     value: 22
+  beta:
+    value: 1
 early_terminate:
   type: hyperband
+  max_iter: 6
   s: 2
   eta: 3
-  max_iter: 27
 
-
-
+  # encoder:
+  #   value: vanilla
+  # decoder: 
+  #   value: vanilla
+  # test_bool:
+  #   value: True
+  # log_metrics: 
+  #   value: True
+  # watch_loss:
+  #   value: True
     
-  
+# distribution: q_log_uniform
+# min: math.log(32)
+# max: math.log(256)
+# q: 1
