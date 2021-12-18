@@ -1,67 +1,100 @@
 <h1 align="center">
-  <b>Jax | VAE | PyTorch</b><br>
+  <b>Vanilla VAE</b><br>
 </h1>
 
-<p align="center">
-      <a href="https://www.python.org/">
-        <img src="https://img.shields.io/badge/Python-3.8-ff69b4.svg" /></a>
-       <a href= "https://pytorch.org/">
-        <img src="https://img.shields.io/badge/PyTorch-1.10-2BAF2B.svg" /></a>
-       <a href= "https://github.com/BeeGass/VAEs/blob/master/LICENSE">
-        <img src="https://img.shields.io/badge/license-Apache2.0-blue.svg" /></a>
-         <a href= "http://twitter.com/intent/tweet?text=Readable-VAEs:%20A%20Collection%20Of%20VAEs%20Written%20In%20PyTorch%20And%20Jax%3A&url=https://github.com/BeeGass/Readable-VAEs">
-        <img src="https://img.shields.io/twitter/url/https/shields.io.svg?style=social" /></a>
+## Encoder
+```python
+import torch
+import torch.nn as nn
 
-</p>
+class Encoder(nn.Module):
+    def __init__(self, latent_vector_dim, sub_dim, encoder_type='vanilla'):
+        super(Encoder, self).__init__()
+        
+        # architecture to solve for latent vector, z
+        self.encoder = nn.Sequential(
+            nn.Linear(28*28, 392),
+            nn.ReLU(),
+            nn.Linear(392, 196),
+            nn.ReLU(),
+            nn.Linear(196, 98),
+            nn.ReLU(),
+            nn.Linear(98, 48),
+            nn.ReLU(),
+            nn.Linear(48, latent_vector_dim),
+            nn.ReLU()
+        )
+        
+        self.read_mu = nn.Linear(latent_vector_dim, sub_dim) # layer to solve for mu, from z
+        self.read_log_var = nn.Linear(latent_vector_dim, sub_dim) # layer to solve for sigma, from z
 
-A collection of Variational AutoEncoders (VAEs) I have implemented in both [jax](https://github.com/google/jax)/[flax](https://github.com/google/flax) and [pytorch](https://pytorch.org/) with particular effort put into readability and reproducibility. 
-
-### Requirements
-- Python >= 3.8
-- PyTorch >= 1.10
-- Jax 
-- TODO
-
-### Installation
-```
-$ TBA
-```
-
-### Usage
-```
-$ TBA
-```
-**Config File Template**
-```yaml
-TBA
-```
-
-**Weights And Biases Integration**
-```
-TBA
+    def forward(self, x):
+        latent_vector_z = self.encoder(x)
+        mu = self.read_mu(latent_vector_z)
+        log_var = self.read_log_var(latent_vector_z)
+        return mu, log_var
 ```
 
-----
-<h2 align="center">
-  <b>Results</b><br>
-</h2>
-
-
-| Model           | Code  | Config  | Paper                                             | Reconstruction | Samples | 
-|-----------------|-------|---------|---------------------------------------------------|----------------|---------|
-| VAE             |&#9744;| &#9744; | [Link](https://arxiv.org/abs/1312.6114)           |     **TBA**    | **TBA** |
-| Beta-VAE        |&#9744;| &#9744; | [Link](https://openreview.net/forum?id=Sy2fzU9gl) |     **TBA**    | **TBA** |
-| Conditional VAE |&#9744;| &#9744; | [Link](https://openreview.net/forum?id=rJWXGDWd-H)|     **TBA**    | **TBA** |
-| VQ-VAE-2        |&#9744;| &#9744; | [Link](https://arxiv.org/abs/1906.00446)          |     **TBA**    | **TBA** |
-
-### Citation
+## Decoder
+```python
+class Decoder(nn.Module):
+    def __init__(self, latent_vector_dim, sub_dim, decoder_type='vanilla'): # takes in z
+        super(Decoder, self).__init__()
+        
+        # architecture to reconstruct for latent vector, z
+        self.decoder = nn.Sequential(
+            nn.Linear(sub_dim, latent_vector_dim),
+            nn.ReLU(),
+            nn.Linear(latent_vector_dim, 48),
+            nn.ReLU(),
+            nn.Linear(48, 98),
+            nn.ReLU(),
+            nn.Linear(98, 196),
+            nn.ReLU(),
+            nn.Linear(196, 392),
+            nn.ReLU(),
+            nn.Linear(392, 28*28),
+            nn.Sigmoid()
+        )
+            
+    def forward(self, x): # outputs x
+        return self.decoder(x)
 ```
-@misc{Gass2021,
-  author = {Gass, B.A.},
-  title = {Readable-VAEs},
-  year = {2021},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/BeeGass/Readable-VAEs}}
-}
+
+## VAE 
+```python
+class VAE(nn.Module):
+    def __init__(self, latent_vector_dim, sub_dim, train_bool=True, encoder_type='vanilla', decoder_type='vanilla'):
+        super(VAE, self).__init__()
+        self._encoder = Encoder(latent_vector_dim, sub_dim, encoder_type)
+        self._decoder = Decoder(latent_vector_dim, sub_dim, decoder_type)
+        self.train_bool = train_bool
+
+    def forward(self, x):
+        mu, log_var = self._encoder(x) 
+        if self.train_bool:
+            z = self.reparameterize(mu, log_var)
+        else:
+            z = mu 
+            
+        x_hat = self._decoder(z)       
+        return x_hat, mu, log_var
+    
+    def reparameterize(self, mu, log_var):
+        std = torch.exp(0.5 * log_var)
+        epsilon = torch.randn_like(std)
+        sigma = epsilon * std
+        return mu + sigma
+    
+    def kl_divergence(self, mu, log_var):
+        return -0.5 * torch.sum(1 + log_var - mu.pow(2) - log_var.exp()) # *for the log_var.exp() portion*: e^ln(var) = var = sigma^2
+
+    def log_likelihood(self, x_hat, x):
+        return torch.mean(torch.pow(x_hat - x, 2)) # log_likelihood of x_hat of the data under the model
+
+    def elbo_loss(self, x_hat, x, mu, log_var, beta=1):
+        kl = self.kl_divergence(mu, log_var)
+        # recon_loss = F.binary_cross_entropy(x_hat.view(-1, 784), x.view(-1, 784), reduction='sum')
+        log_likeliness = self.log_likelihood(x_hat, x) # also recon_loss
+        return log_likeliness + (kl * beta)
 ```
