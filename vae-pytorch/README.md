@@ -2,6 +2,10 @@
   <b>Vanilla VAE</b><br>
 </h1>
 
+Here you will find various different VAE implementations done within pytorch, however because this repo focuses on reproducibility, which has proved to be inversely correlated to its readability, I hoped to create a place where future learners may go to and find clear/simple code that helps in their understanding of variational autoencoders. 
+
+In the future, as I implement more I hope to move these READMEs into a directory of their own, until then what is shown below is an implementation of a vanilla VAE. 
+
 ## Encoder
 ```python
 import torch
