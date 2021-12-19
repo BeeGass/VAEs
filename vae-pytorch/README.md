@@ -98,7 +98,6 @@ class VAE(nn.Module):
 
     def elbo_loss(self, x_hat, x, mu, log_var, beta=1):
         kl = self.kl_divergence(mu, log_var)
-        # recon_loss = F.binary_cross_entropy(x_hat.view(-1, 784), x.view(-1, 784), reduction='sum')
         log_likeliness = self.log_likelihood(x_hat, x) # also recon_loss
         return log_likeliness + (kl * beta)
 ```
