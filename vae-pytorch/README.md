@@ -97,7 +97,7 @@ class VAE(nn.Module):
         return torch.mean(torch.pow(x_hat - x, 2)) # log_likelihood of x_hat of the data under the model
 
     def elbo_loss(self, x_hat, x, mu, log_var, beta=1):
-        kl = self.kl_divergence(mu, log_var)
-        log_likeliness = self.log_likelihood(x_hat, x) # also recon_loss
+        kl = self.kl_divergence(mu, log_var) # regularization term
+        log_likeliness = self.log_likelihood(x_hat, x) # reconstruction loss
         return log_likeliness + (kl * beta)
 ```
