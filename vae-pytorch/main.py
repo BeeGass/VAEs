@@ -50,16 +50,7 @@ def config_run(cfg : DictConfig) -> None:
         #torch.onnx.export(model, images, "model.onnx")
         #wandb.save("model.onnx")
         
-# def cond_main(flag, func, dec=hydra.main) -> Callable[[TaskFunction], Any]:
-#         if flag:
-#             def wrapper(*args, **kwargs):
-#                 return dec(func, *args, **kwargs)
-#         else:
-#             def wrapper(*args, **kwargs):
-#                 return func(*args, **kwargs)
-        
 def tuner() -> None:
-    #cfg = OmegaConf.to_yaml(cfg)
     hydra.initialize(config_path="src/conf")
     cfg = hydra.compose(config_name="sweep_config")
     cfg = OmegaConf.to_container(cfg, resolve=[True|False])
@@ -68,34 +59,6 @@ def tuner() -> None:
     wandb.agent(sweep_id, function=config_tune)
 
 def config_tune() -> None:
-    
-    """
-    cfg = {
-        'method': 'random', #grid, random
-        'metric': {
-            'name': 'elbo_loss',
-            'goal': 'maximize'   
-        },
-        'parameters': {
-            'optimizer': 'adam',
-            'scheduler': 'reduce_lr',
-            'hidden_dim': 50,
-            'hidden_sub_dim': 30,
-            'num_epochs': 100,
-            'batch_size': 10,
-            'weight_decay': 0.001,
-            'learning_rate': 0.001,
-            'num_workers': 22,
-            'beta': 1,
-            'encoder': 'vanilla',
-            'decoder': 'vanilla',
-            'test_bool': True,
-            'log_metrics': True,
-            'watch_loss': True
-        }
-    }
-    """
-    
     cfg = {
         'method': 'random', #grid, random
         'metric': {
@@ -216,7 +179,7 @@ def train(model, optimizer, sched, train_loader, test_loader, device, num_epochs
         if log_metrics:
             wandb.log({"epoch": epoch})
             wandb.log({"train_loss": train_loss})
-        #print(f"Epoch: {epoch+1} \nTrain Loss: {train_loss}")
+        # print(f"Epoch: {epoch+1} \nTrain Loss: {train_loss}")
         sched.step(train_loss)
         
     if test_bool:
