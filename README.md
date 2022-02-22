@@ -74,12 +74,13 @@ TBA
 </h2>
 
 
-| Model           | Code    | Config  | Paper                                             | Reconstruction | Samples | 
-|-----------------|---------|---------|---------------------------------------------------|----------------|---------|
-| VAE             | &#9745; | &#9744; | [Link](https://arxiv.org/abs/1312.6114)           |     **TBA**    | **TBA** |
-| Beta-VAE        | &#9744; | &#9744; | [Link](https://openreview.net/forum?id=Sy2fzU9gl) |     **TBA**    | **TBA** |
-| Conditional VAE | &#9744; | &#9744; | [Link](https://openreview.net/forum?id=rJWXGDWd-H)|     **TBA**    | **TBA** |
-| VQ-VAE-2        | &#9744; | &#9744; | [Link](https://arxiv.org/abs/1906.00446)          |     **TBA**    | **TBA** |
+| Model           | PyTorch | Jax/Flax |  Flux   | Config  | Paper                                              | Reconstruction | Samples |
+|:--------------- |:-------:|:--------:|:-------:|:-------:|:-------------------------------------------------- |:--------------:|:-------:|
+| VAE             | #9745;  |  #9744;  | &#9744; | &#9744; | [Link](https://arxiv.org/abs/1312.6114)            |    **TBA**     | **TBA** |
+| Beta-VAE        | #9744;  |  #9744;  | &#9744; | &#9744; | [Link](https://openreview.net/forum?id=Sy2fzU9gl)  |    **TBA**     | **TBA** |
+| Conditional VAE | #9744;  |  #9744;  | &#9744; | &#9744; | [Link](https://openreview.net/forum?id=rJWXGDWd-H) |    **TBA**     | **TBA** |
+| VQ-VAE-2        | #9744;  |  #9744;  | &#9744; | &#9744; | [Link](https://arxiv.org/abs/1906.00446)           |    **TBA**     | **TBA** |
+
 
 ### Citation
 ```bib
